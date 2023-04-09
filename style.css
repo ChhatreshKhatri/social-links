@@ -1,0 +1,216 @@
+body {
+  display: flex;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  justify-items: center;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  justify-content: center;
+}
+.bubbles-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.bubbles {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: bubble 20s linear infinite;
+  animation-duration: calc(120s / var(--i));
+}
+.bubbles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(130vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+.App {
+  background: transparent;
+  margin: 50px auto;
+  max-width: 350px;
+  padding: 24px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.App:before {
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  height: calc(100% - 4px);
+  left: 2px;
+  top: 2px;
+  -webkit-transform: translateZ(-1);
+  transform: translateZ(-1);
+  width: calc(100% - 4px);
+  z-index: -1;
+}
+
+.App:after,
+.App:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.App:after {
+  background: linear-gradient(
+    269.16deg,
+    #ffe580 -15.83%,
+    #ff7571 -4.97%,
+    #ff7270 15.69%,
+    #ea5dad 32.43%,
+    #c2a0fd 50.09%,
+    #9867f0 67.47%,
+    #3bf0e4 84.13%,
+    #33ce43 105.13%,
+    #b2f4b6 123.24%
+  );
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  top: 0;
+  transition: opacity 0.8s ease-in-out;
+  width: 100%;
+  z-index: -3;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  33.3% {
+    background-position: 100px 0;
+  }
+  66.6% {
+    background-position: 200px 0;
+  }
+  100% {
+    background-position: 300px 0;
+  }
+}
+
+.App:hover:after {
+  opacity: 1;
+}
+.myPic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(0 0 0.75rem #151515);
+}
+.title {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    270.97deg,
+    #ffe580 -21.36%,
+    #ff7571 -2.45%,
+    #ea5dad 26.84%,
+    #c2a0fd 64.15%,
+    #3bf0e4 108.29%,
+    #b2f4b6 159.03%
+  );
+  -webkit-background-clip: text;
+  animation: animate 4s linear infinite;
+}
+@media (max-width: 345px) {
+  .title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 450px) {
+  .title {
+    font-size: 24px;
+  }
+  .myPic {
+    height: 150px;
+    width: 150px;
+  }
+  .App {
+    margin: 50px 12px;
+  }
+}
+a {
+  text-decoration: none;
+}
+.Links {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: calc(100% - 10px);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  height: 26px;
+  width: 26px;
+}
+.name {
+  padding-left: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  border: 0px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 19px;
+  margin: 5px;
+  width: calc(100% - 15px);
+  overflow: hidden;
+  padding: 0px 10px;
+  user-select: none;
+  height: 50px;
+}
+.personal {
+  background: #191919;
+}
+.linkedin {
+  background: #1d2226;
+}
+.GitHub {
+  background: #161b22;
+}
+.instagram {
+  background: #121212;
+}
+
+.facebook {
+  background: #242526;
+}
+.twitter {
+  background: #16181c;
+}
+.youtube {
+  background: #0f0f0f;
+}
+.steam {
+  background: #171a21;
+}
