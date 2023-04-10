@@ -97,14 +97,11 @@ body {
   0% {
     background-position: 0 0;
   }
-  33.3% {
-    background-position: 100px 0;
-  }
-  66.6% {
-    background-position: 200px 0;
+  50% {
+    background-position: 175px 0;
   }
   100% {
-    background-position: 300px 0;
+    background-position: 350px 0;
   }
 }
 
