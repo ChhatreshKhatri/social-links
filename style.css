@@ -131,12 +131,15 @@ body {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
     270.97deg,
-    #ffe580 -21.36%,
-    #ff7571 -2.45%,
-    #ea5dad 26.84%,
-    #c2a0fd 64.15%,
-    #3bf0e4 108.29%,
-    #b2f4b6 159.03%
+    #ffe580 -15.83%,
+    #ff7571 -4.97%,
+    #ff7270 15.69%,
+    #ea5dad 32.43%,
+    #c2a0fd 50.09%,
+    #9867f0 67.47%,
+    #3bf0e4 84.13%,
+    #33ce43 105.13%,
+    #b2f4b6 123.24%
   );
   background-size: 200%;
   -webkit-background-clip: text;
