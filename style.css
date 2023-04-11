@@ -26,9 +26,21 @@ body {
   background: #4fc3dc;
   margin: 0 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  box-shadow: 0 0 0 10px #4fc3dc35, 0 0 15px #4fc3dc, 0 0 50px #4fc3dc;
   animation: bubble 20s linear infinite;
   animation-duration: calc(120s / var(--i));
+}
+@media (max-width: 768px) {
+  .bubbles span {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .bubbles span {
+    width: 10px;
+    height: 10px;
+  }
 }
 .bubbles span:nth-child(even) {
   background: #ff2d75;
@@ -77,8 +89,8 @@ body {
 }
 .App::before {
   background: linear-gradient(
-    var(--rotate)
-    ,  #ffe580 -15.83%,
+    var(--rotate),
+    #ffe580 -15.83%,
     #ff7571 -4.97%,
     #ff7270 15.69%,
     #ea5dad 32.43%,
@@ -86,7 +98,8 @@ body {
     #9867f0 67.47%,
     #3bf0e4 84.13%,
     #33ce43 105.13%,
-    #b2f4b6 123.24%);
+    #b2f4b6 123.24%
+  );
   height: 100%;
   left: 0;
   top: 0;
@@ -94,9 +107,8 @@ body {
   transition: opacity 0.8s ease-in-out;
   width: 100%;
   z-index: -3;
-    animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
 }
-
 
 @keyframes spin {
   0% {
@@ -106,7 +118,6 @@ body {
     --rotate: 360deg;
   }
 }
-
 
 .myPic {
   border-radius: 50%;
@@ -127,17 +138,15 @@ body {
     #3bf0e4 108.29%,
     #b2f4b6 159.03%
   );
+  background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: animate 4s linear infinite;;
+  animation: animated_text 4s ease-out infinite;
 }
-@keyframes animate {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 350px 0;
-  }
+@keyframes animated_text {
+  0% { background-position: 200% 0px; }
+	50% { background-position: 100% 0px; }
+	100% { background-position: 0px 0px; }
 }
 
 @media (max-width: 425px) {
