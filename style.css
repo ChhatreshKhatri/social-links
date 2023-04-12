@@ -144,7 +144,7 @@ body {
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: animated_text 4s ease-out infinite;
+  animation: animated_text 4s linear infinite;
 }
 @keyframes animated_text {
   0% { background-position: 200% 0px; }
