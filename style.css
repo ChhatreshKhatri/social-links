@@ -1,18 +1,13 @@
 body {
   display: flex;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  justify-items: center;
-  background-color: #2b4162;
-  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   justify-content: center;
+  background: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 }
 .bubbles-container {
   position: fixed;
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .bubbles {
   position: relative;
@@ -60,9 +55,7 @@ body {
   inherits: true;
 }
 .App {
-  background: linear-gradient(315deg, #485461 0%, #28313b 74%);
   margin: 50px auto;
-  max-width: 350px;
   padding: 24px;
   position: relative;
   text-align: center;
@@ -81,8 +74,6 @@ body {
   height: calc(100% - 5px);
   left: 2px;
   top: 2px;
-  -webkit-transform: translateZ(-1);
-  transform: translateZ(-1);
   width: calc(100% - 5px);
   border-radius: 5px;
   z-index: -1;
@@ -109,7 +100,6 @@ body {
   z-index: -3;
   animation: spin 4s linear infinite;
 }
-
 @keyframes spin {
   0% {
     --rotate: 0deg;
@@ -118,7 +108,6 @@ body {
     --rotate: 360deg;
   }
 }
-
 .myPic {
   border-radius: 50%;
   width: 200px;
@@ -151,10 +140,9 @@ body {
 	50% { background-position: 100% 0px; }
 	100% { background-position: 0px 0px; }
 }
-
 @media (max-width: 425px) {
   .title {
-    font-size: 26px;
+    font-size: 1.5em;
   }
   .myPic {
     height: 150px;
@@ -164,7 +152,6 @@ body {
     margin: 50px 12px;
   }
 }
-
 a {
   text-decoration: none;
 }
@@ -189,7 +176,6 @@ a {
   text-align: left;
   width: 100%;
 }
-
 .btn {
   display: block;
   border: 0px;
@@ -216,7 +202,6 @@ a {
 .instagram {
   background: #121212;
 }
-
 .facebook {
   background: #242526;
 }
