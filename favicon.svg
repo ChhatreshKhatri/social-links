@@ -5,9 +5,9 @@
       <stop id="SvgjsStop1020" stop-color="#7e1f2a" offset="0"/>
       <stop id="SvgjsStop1021" stop-color="#ff4057" offset="1"/>
     </linearGradient>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="94.999" y1="-13.375" x2="94.999" y2="120.375" id="gradient-0" gradientTransform="matrix(0.706957, 0.448085, -1.502219, 0.951332, 108.207546, -39.602195)">
+    <linearGradient gradientUnits="userSpaceOnUse" x1="94.999" y1="-13.375" x2="94.999" y2="120.375" id="gradient-0" gradientTransform="matrix(0.704019, 0.449938, -1.503143, 0.944055, 108.133441, -40.090742)">
       <stop offset="0" style="stop-color: rgb(25, 25, 25);"/>
-      <stop offset="1" style=""/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
     </linearGradient>
   </defs>
   <g id="SvgjsG1015" featurekey="rootContainer" transform="matrix(0.454737, 0, 0, 0.717757, 4.800207, 9.600001)" fill="#111111">
