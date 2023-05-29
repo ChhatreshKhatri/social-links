@@ -9,9 +9,9 @@
       "type": "image/svg+xml"
     },
     {
-      "src": "logo144.png",
-      "type": "image/png",
-      "sizes": "144x144"
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32"
     }
   ],
   "start_url": ".",
