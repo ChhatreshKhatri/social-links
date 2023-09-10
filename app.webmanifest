@@ -1,27 +1,22 @@
 {
-  "short_name": "Social Links",
   "name": "Chhatresh Khatri | Social Links",
+  "short_name": "Social Links",
   "description": "Chhatresh Khatri Social Links. The webpage will feature links to various social media profiles and websites.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "icons": [
     {
-      "src": "favicon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "apple-icon.png",
-      "type": "image/png",
-      "sizes": "180x180"
-    },
-    {
-      "src": "icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "favicon.ico",
+      "sizes": "16x16 24x24 32x32 48x48 64x64 96x96 128x128 192x192 256x256 384x384 512x512",
+      "type": "image/x-icon"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
