@@ -2,6 +2,7 @@ body {
   display: flex;
   justify-content: center;
   background: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  font: "arial";
 }
 .bubbles-container {
   position: fixed;
@@ -217,6 +218,9 @@ a {
 }
 .youtube {
   background: #0f0f0f;
+}
+.discord {
+  background: #1e1f22;
 }
 .steam {
   background: #171a21;
