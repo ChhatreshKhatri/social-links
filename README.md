@@ -3,7 +3,7 @@
 This is a simple webpage made using html & css that showcases links to various social profiles.
 
 <div align="center">
-<a href="https://social.chhatreshkhatri.com">
+<a href="https://links.chhatreshkhatri.com/">
   <img src="./assets/webpage.jpeg" width="99%"></a>
 
 </div>
